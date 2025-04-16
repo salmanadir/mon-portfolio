@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { AnimatedElement } from './AnimatedElement';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<number | null>(null);
@@ -12,28 +13,32 @@ export const ProjectsSection = () => {
       description: "Conception et développement d'une plateforme pour la gestion des entrepôts utilisant la méthode de WILSON, TSP, VRP.",
       period: "Février 2024 - Présent",
       location: "ENSIAS, RABAT",
-      technologies: ["Laravel", "PHP", "MySQL", "Python", "Laravel Forge", "DigitalOcean"]
+      technologies: ["Laravel", "PHP", "MySQL", "Python", "Laravel Forge", "DigitalOcean"],
+      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
     },
     {
       title: "Système d'information de gestion des achats, de stock et d'entreposage",
       description: "Conception et développement d'un système d'information complet qui intègre la gestion des achats, du stock et de l'entreposage pour optimiser la chaîne d'approvisionnement.",
       period: "Janvier 2023 - Présent",
       location: "ENSIAS, RABAT",
-      technologies: ["Oracle Apex", "PL/SQL", "UML"]
+      technologies: ["Oracle Apex", "PL/SQL", "UML"],
+      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
     },
     {
       title: "Système d'information de gestion d'un groupe de cliniques vétérinaires",
       description: "Conception et développement d'un système d'information pour gérer efficacement un réseau de cliniques vétérinaires, incluant la gestion des patients, des rendez-vous et du personnel médical.",
       period: "Oct 2024 - Déc 2024",
       location: "ENSIAS, RABAT",
-      technologies: ["Oracle Apex", "PL/SQL", "UML"]
+      technologies: ["Oracle Apex", "PL/SQL", "UML"],
+      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
     },
     {
       title: "Application de la méthode DRP dans la prévision et la planification",
       description: "Conception et développement d'une application utilisant la méthode DRP (Distribution Resource Planning) pour optimiser la prévision et la planification des ressources dans un cas de demande saisonnière.",
       period: "Mars 2024 - Juin 2024",
       location: "ENSIAS, RABAT",
-      technologies: ["Django", "Python", "HTML", "CSS", "Chart.JS"]
+      technologies: ["Django", "Python", "HTML", "CSS", "Chart.JS"],
+      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
     }
   ];
 
@@ -59,8 +64,14 @@ export const ProjectsSection = () => {
                   activeProject === index ? 'ring-2 ring-portfolio-blue-dark' : ''
                 }`}
                 whileHover={{ y: -5 }}
-                onClick={() => setActiveProject(activeProject === index ? null : index)}
               >
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform hover:scale-105"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{project.title}</h3>
                   
@@ -84,15 +95,34 @@ export const ProjectsSection = () => {
                     )}
                   </AnimatePresence>
                   
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span 
-                        key={techIndex}
-                        className="text-xs font-medium px-3 py-1 rounded-full bg-portfolio-blue-light/30 text-portfolio-blue-dark"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                  <div className="flex justify-between items-center">
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                        <span 
+                          key={techIndex}
+                          className="text-xs font-medium px-3 py-1 rounded-full bg-portfolio-blue-light/30 text-portfolio-blue-dark"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                      {project.technologies.length > 3 && (
+                        <span className="text-xs font-medium px-3 py-1 rounded-full bg-portfolio-blue-light/10 text-portfolio-blue-dark">
+                          +{project.technologies.length - 3}
+                        </span>
+                      )}
+                    </div>
+                    
+                    <motion.button
+                      className="flex items-center gap-1 text-sm text-portfolio-blue-dark font-medium"
+                      onClick={() => setActiveProject(activeProject === index ? null : index)}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {activeProject === index ? (
+                        <ChevronUp className="h-4 w-4" />
+                      ) : (
+                        <ChevronDown className="h-4 w-4" />
+                      )}
+                    </motion.button>
                   </div>
                 </div>
               </motion.div>
