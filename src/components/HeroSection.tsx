@@ -1,6 +1,7 @@
 
 import { AnimatedElement } from './AnimatedElement';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 
 export const HeroSection = () => {
   return (
@@ -25,7 +26,7 @@ export const HeroSection = () => {
             </p>
           </AnimatedElement>
           
-          <AnimatedElement animation="fadeInLeft" delay={0.8} className="flex flex-wrap gap-4">
+          <AnimatedElement animation="fadeInLeft" delay={0.8}>
             <motion.a 
               href="#contact" 
               className="px-6 py-2.5 bg-portfolio-blue-dark text-white rounded-full shadow-lg hover:shadow-xl transition-all"
@@ -34,43 +35,68 @@ export const HeroSection = () => {
             >
               Me contacter
             </motion.a>
-            <motion.a 
-              href="#experience" 
-              className="px-6 py-2.5 border border-portfolio-blue rounded-full text-portfolio-blue-dark hover:bg-portfolio-blue-light/30 transition-all"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Mon expérience
-            </motion.a>
           </AnimatedElement>
         </div>
         
         <div className="order-1 md:order-2 flex justify-center">
           <AnimatedElement animation="scaleIn" delay={0.4} className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-portfolio-blue-light to-portfolio-blue-dark rounded-full opacity-30 blur-3xl transform scale-110"></div>
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10">
+            <motion.div 
+              className="absolute inset-0 bg-gradient-to-r from-portfolio-blue-light to-portfolio-blue-dark rounded-full opacity-30 blur-3xl transform scale-110"
+              animate={{ 
+                scale: [1.1, 1.15, 1.1],
+                opacity: [0.3, 0.4, 0.3],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            ></motion.div>
+            <motion.div 
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10"
+              animate={{ 
+                boxShadow: [
+                  "0px 10px 25px rgba(2, 136, 209, 0.3)", 
+                  "0px 15px 35px rgba(2, 136, 209, 0.4)", 
+                  "0px 10px 25px rgba(2, 136, 209, 0.3)"
+                ]
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
               <img 
                 src="/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" 
                 alt="Ikram Bouhada" 
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
           </AnimatedElement>
         </div>
       </div>
       
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-gray-600 mb-2">Scroll</span>
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          className="h-6 w-6 text-portfolio-blue-dark" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke="currentColor"
+      <motion.div 
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ 
+          delay: 1.5,
+          duration: 0.5
+        }}
+      >
+        <span className="text-sm text-gray-600 mb-2">Défiler</span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ 
+            duration: 1.5, 
+            repeat: Infinity,
+          }}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </div>
+          <ChevronDown className="w-6 h-6 text-portfolio-blue-dark" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
