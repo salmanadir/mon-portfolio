@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import { DynamicBackground } from '../components/DynamicBackground';
+import { Navbar } from '../components/Navbar';
+import { HeroSection } from '../components/HeroSection';
+import { AboutSection } from '../components/AboutSection';
+import { ExperienceSection } from '../components/ExperienceSection';
+import { EducationSection } from '../components/EducationSection';
+import { SkillsSection } from '../components/SkillsSection';
+import { ProjectsSection } from '../components/ProjectsSection';
+import { ContactSection } from '../components/ContactSection';
+import { Footer } from '../components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Add Google Fonts link
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
+    document.head.appendChild(link);
+    
+    document.title = 'Ikram Bouhada - Portfolio';
+    
+    return () => {
+      // Clean up the link when component unmounts
+      document.head.removeChild(link);
+    };
+  }, []);
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <DynamicBackground />
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <EducationSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };
