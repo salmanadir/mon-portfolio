@@ -27,9 +27,9 @@ export const Navbar = () => {
   const menuItems = [
     { name: 'Accueil', anchor: 'home' },
     { name: 'À Propos', anchor: 'about' },
-    { name: 'Expérience', anchor: 'experience' },
     { name: 'Formation', anchor: 'education' },
     { name: 'Compétences', anchor: 'skills' },
+    { name: 'Expérience', anchor: 'experience' },
     { name: 'Projets', anchor: 'projects' },
     { name: 'Activités', anchor: 'extracurricular' },
     { name: 'Contact', anchor: 'contact' }
@@ -48,7 +48,6 @@ export const Navbar = () => {
           <div className="h-9 w-9 rounded-full bg-gradient-to-br from-portfolio-blue-light to-portfolio-blue-dark flex items-center justify-center">
             <span className="font-bold text-white">IB</span>
           </div>
-          <span className="font-semibold text-lg text-portfolio-blue-dark">Ikram Bouhada</span>
         </AnimatedElement>
         
         {/* Menu pour Desktop */}
