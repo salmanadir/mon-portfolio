@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { AnimatedElement } from './AnimatedElement';
 import { motion } from 'framer-motion';
@@ -9,17 +8,19 @@ export const ExperienceSection = () => {
   
   const experiences = [
     {
-      title: "Stagiaire en développement de front-end d'une application web ROCKO",
-      company: "TechForTrade",
-      location: "Rabat",
-      period: "Juillet 2024 - Août 2024",
+      title: "Développeur Fullstack d'une application de Gestion des Formations",
+      company: "MegaDev",
+      location: "Salé",
+      period: "Juin 2024 - Juillet 2024",
       description: [
-        "Collaboration avec l'équipe UX/UI pour transformer les maquettes Figma en composants interactifs et responsives.",
-        "Développement du front-end d'une interface web B2B pour la gestion des commandes et facturation."
+        "Conception de l'application via des diagrammes UML",
+        "Développement backend avec architecture MVC en PHP",
+        "Création d'interfaces frontend dynamiques en JavaScript",
+        "Gestion des données avec MySQL"
       ],
-      detailedDescription: "J'ai travaillé en étroite collaboration avec l'équipe UX/UI pour transformer leurs maquettes Figma en interfaces web fonctionnelles. Ce projet m'a permis d'améliorer mes compétences en développement front-end, notamment avec React et les différentes librairies CSS modernes. J'ai également appris à optimiser les performances et l'expérience utilisateur, tout en respectant les délais serrés du projet.",
-      technologies: ["Figma", "React", "HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      detailedDescription: "Dans le cadre de ce stage, j'ai conçu et développé une application complète de gestion des formations. J'ai commencé par modéliser le système avec des diagrammes UML, puis j'ai implémenté l'architecture MVC côté backend en PHP natif. Pour le frontend, j'ai créé des interfaces dynamiques avec JavaScript vanilla et une mise en page structurée en HTML/CSS. J'ai également géré la base de données MySQL et assuré la communication entre les différentes couches de l'application.",
+      technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3", "UML", "MVC"],
+      image: "/education/megadev.png" // Placeholder, à remplacer
     }
   ];
 

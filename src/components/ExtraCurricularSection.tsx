@@ -1,28 +1,27 @@
-
 import { AnimatedElement } from './AnimatedElement';
 
 export const ExtraCurricularSection = () => {
   const activities = [
     {
-      title: "Club Développement Durable",
-      role: "Membre actif",
+      title: "Club d'Initiative Nationale pour le Développement Humain",
+      role: "Responsable de la cellule sponsoring",
       period: "2023 - Présent",
-      description: "Participation à des initiatives écologiques sur le campus et organisation d'événements de sensibilisation à l'environnement.",
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      description: "Organisation de la caravane socio-médicale et de projets durables pour le développement humain au sein de l'ENSIAS.",
+      image: "/education/cindh.png" // Placeholder à remplacer
     },
     {
-      title: "Association des Étudiants en Logistique",
-      role: "Coordinatrice d'événements",
-      period: "2022 - 2023",
-      description: "Organisation de conférences professionnelles et coordination des activités entre les étudiants et les entreprises partenaires.",
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "Club Forum Geni Entreprises",
+      role: "Membre active",
+      period: "2023 - Présent",
+      description: "Organisation du forum annuel et des événements de recrutement pour faciliter le contact entre étudiants et entreprises.",
+      image: "/education/fge.png" // Placeholder à remplacer
     },
     {
-      title: "Club de Robotique",
-      role: "Participante",
-      period: "2021 - 2022",
-      description: "Participation à des compétitions de robotique et développement de projets innovants utilisant l'IA et l'automatisation.",
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "Cours de Soutien",
+      role: "Enseignante bénévole",
+      period: "2021 - Présent",
+      description: "Donner des cours de soutien  à des élèves orphelins gratuitement pour les aider dans leur parcours académique.",
+      image: "/education/tutoring.jpg" // Placeholder à remplacer
     }
   ];
 
@@ -31,7 +30,7 @@ export const ExtraCurricularSection = () => {
       <div className="container mx-auto px-4">
         <AnimatedElement className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-portfolio-blue-dark">Activités</span> Parascolaires
+            <span className="text-portfolio-blue-dark">Engagements</span> Extra-académiques
           </h2>
           <div className="w-24 h-1 bg-portfolio-blue-dark mx-auto"></div>
         </AnimatedElement>
@@ -44,7 +43,7 @@ export const ExtraCurricularSection = () => {
               delay={index * 0.2}
               className="h-full"
             >
-              <div className="glass-card rounded-xl overflow-hidden h-full shadow-lg transition-all hover:-translate-y-1">
+              <div className="glass-card rounded-xl overflow-hidden h-full shadow-lg transition-all hover:-translate-y-1 flex flex-col">
                 <div className="h-48 overflow-hidden">
                   <img 
                     src={activity.image} 
@@ -52,7 +51,7 @@ export const ExtraCurricularSection = () => {
                     className="w-full h-full object-cover transition-transform hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow">
                   <div className="mb-2">
                     <span className="text-sm font-medium bg-portfolio-blue-light/30 text-portfolio-blue-dark px-3 py-1 rounded-full">
                       {activity.period}

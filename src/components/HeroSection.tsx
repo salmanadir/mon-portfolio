@@ -1,32 +1,31 @@
-
 import { AnimatedElement } from './AnimatedElement';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen pt-24 pb-12 flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-screen pt-24 pb-12 flex items-center relative overflow-hidden bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1">
           <AnimatedElement animation="fadeInLeft" delay={0.2}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800">
-              <span className="text-portfolio-blue-dark">IKRAM</span> BOUHADA
+              <span className="text-portfolio-blue-dark">SALMA</span> NADIR
             </h1>
           </AnimatedElement>
           
           <AnimatedElement animation="fadeInLeft" delay={0.4} className="mb-6">
             <h2 className="text-xl md:text-2xl text-gray-600">
-              Élève ingénieure en <span className="text-portfolio-blue-dark font-medium">Smart Supply Chain</span> And Logistics
+              Élève ingénieure en <span className="text-portfolio-blue-dark font-medium">Génie Logiciel</span> à l'ENSIAS
             </h2>
           </AnimatedElement>
           
           <AnimatedElement animation="fadeInLeft" delay={0.6} className="mb-8">
             <p className="text-gray-600 max-w-lg">
-              À la recherche d'un stage de fin d'année d'une durée de 2 mois à partir de mi-Juin.
+              À la recherche d'un stage de fin d'année en développement de 2 à 3 mois pour mettre en pratique mes compétences techniques.
             </p>
           </AnimatedElement>
           
-          <AnimatedElement animation="fadeInLeft" delay={0.8}>
+          <AnimatedElement animation="fadeInLeft" delay={0.8} className="flex gap-4">
             <motion.a 
               href="#contact" 
               className="px-6 py-2.5 bg-portfolio-blue-dark text-white rounded-full shadow-lg hover:shadow-xl transition-all"
@@ -34,6 +33,14 @@ export const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
             >
               Me contacter
+            </motion.a>
+            <motion.a 
+              href="#projects" 
+              className="px-6 py-2.5 border-2 border-portfolio-blue-dark text-portfolio-blue-dark rounded-full shadow-lg hover:shadow-xl transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Voir mes projets
             </motion.a>
           </AnimatedElement>
         </div>
@@ -53,7 +60,7 @@ export const HeroSection = () => {
               }}
             ></motion.div>
             <motion.div 
-              className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl relative z-10 bg-white"
               animate={{ 
                 boxShadow: [
                   "0px 10px 25px rgba(2, 136, 209, 0.3)", 
@@ -68,8 +75,8 @@ export const HeroSection = () => {
               }}
             >
               <img 
-                src="/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" 
-                alt="Ikram Bouhada" 
+                src="public/lovable-uploads/picture.png" // Remplacez par votre photo
+                alt="Salma Nadir" 
                 className="w-full h-full object-cover"
               />
             </motion.div>

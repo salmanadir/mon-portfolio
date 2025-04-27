@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { AnimatedElement } from './AnimatedElement';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -9,36 +8,44 @@ export const ProjectsSection = () => {
   
   const projects = [
     {
-      title: "Plateforme pour la gestion des entrepôts",
-      description: "Conception et développement d'une plateforme pour la gestion des entrepôts utilisant la méthode de WILSON, TSP, VRP.",
-      period: "Février 2024 - Présent",
-      location: "ENSIAS, RABAT",
-      technologies: ["Laravel", "PHP", "MySQL", "Python", "Laravel Forge", "DigitalOcean"],
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "Framework Géospatial - Atlas Marocain Interactif",
+      description: "Développement d'une plateforme d'analyse des territoires marocains utilisant Flask et Earth Engine pour des visualisations géospatiales avancées.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Flask", "Google Earth Engine", "Python", "JavaScript"],
+      image: "/education/atlas-marocain.jpg" // Placeholder, à remplacer
     },
     {
-      title: "Système d'information de gestion des achats, de stock et d'entreposage",
-      description: "Conception et développement d'un système d'information complet qui intègre la gestion des achats, du stock et de l'entreposage pour optimiser la chaîne d'approvisionnement.",
-      period: "Janvier 2023 - Présent",
-      location: "ENSIAS, RABAT",
-      technologies: ["Oracle Apex", "PL/SQL", "UML"],
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "Application Mobile de Gestion de Projets Collaboratifs",
+      description: "Conception et développement d'une application Android pour la gestion de tâches en équipe avec système de notifications et suivi des progrès.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Android Studio", "Java", "Firebase", "MVVM", "UML"],
+      image: "/education/gestion-projets.webp" // Placeholder, à remplacer
     },
     {
-      title: "Système d'information de gestion d'un groupe de cliniques vétérinaires",
-      description: "Conception et développement d'un système d'information pour gérer efficacement un réseau de cliniques vétérinaires, incluant la gestion des patients, des rendez-vous et du personnel médical.",
-      period: "Oct 2024 - Déc 2024",
-      location: "ENSIAS, RABAT",
-      technologies: ["Oracle Apex", "PL/SQL", "UML"],
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "AstroMap - Plateforme d'Exploration Spatiale",
+      description: "Application web interactive de visualisation 3D du système solaire avec quiz éducatif et intégration d'API NASA pour les données astronomiques.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["React.js", "Three.js", "Spring Boot", "API NASA", "Docker"],
+      image: "/education/astromap.jpg" // Placeholder, à remplacer
     },
     {
-      title: "Application de la méthode DRP dans la prévision et la planification",
-      description: "Conception et développement d'une application utilisant la méthode DRP (Distribution Resource Planning) pour optimiser la prévision et la planification des ressources dans un cas de demande saisonnière.",
-      period: "Mars 2024 - Juin 2024",
-      location: "ENSIAS, RABAT",
-      technologies: ["Django", "Python", "HTML", "CSS", "Chart.JS"],
-      image: "/lovable-uploads/e2b76fd2-fe2c-4e6d-bd44-191702e5c093.png" // Placeholder, à remplacer
+      title: "Application de Gestion des Stages de l'ENSIAS",
+      description: "Conception et développement d'un système complet de gestion des stages étudiants avec interfaces administratives et étudiantes.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Oracle APEX", "PL/SQL", "Oracle DB", "Merise"],
+      image: "/education/gestion-stages.jpg" // Placeholder, à remplacer
+    },
+    {
+      title: "Application de Gestion des Formations",
+      description: "Développement d'une application web complète avec API REST pour la gestion des formations, incluant une interface responsive et des tests approfondis.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Spring Boot", "Java", "Postman", "MySQL", "HTML5/CSS3", "JavaScript"],
+      image: "/education/gestion-formations.avif" // Placeholder, à remplacer
     }
   ];
 
@@ -47,7 +54,7 @@ export const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <AnimatedElement className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-portfolio-blue-dark">Projets</span> Académiques
+            <span className="text-portfolio-blue-dark">Mes</span> Projets
           </h2>
           <div className="w-24 h-1 bg-portfolio-blue-dark mx-auto"></div>
         </AnimatedElement>

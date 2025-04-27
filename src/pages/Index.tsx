@@ -20,7 +20,7 @@ const Index = () => {
     link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
     document.head.appendChild(link);
     
-    document.title = 'Ikram Bouhada - Portfolio';
+    document.title = 'Salma NADIR - Portfolio';
     
     return () => {
       // Clean up the link when component unmounts
@@ -34,10 +34,11 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <ExperienceSection />
       <EducationSection />
-      <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
+      <SkillsSection />
+      
       <ExtraCurricularSection />
       <ContactSection />
       <Footer />

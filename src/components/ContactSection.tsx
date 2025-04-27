@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { AnimatedElement } from './AnimatedElement';
 import { motion } from 'framer-motion';
@@ -61,20 +60,20 @@ export const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'ikram.bouhada@gmail.com',
-      link: 'mailto:ikram.bouhada@gmail.com',
+      value: 'G134794268@um5.ac.ma',
+      link: 'mailto:G134794268@um5.ac.ma',
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      value: '+212 600 000 000',
-      link: 'tel:+212600000000',
+      value: '+212 6 66 96 52 58',
+      link: 'tel:+212666965258',
     },
     {
       icon: MapPin,
       title: 'Adresse',
       value: 'Rabat, Maroc',
-      link: 'https://maps.google.com/?q=Rabat,Maroc',
+      link: 'https://maps.google.com/?q=ENSIAS,Rabat,Maroc',
     },
   ];
   
@@ -202,8 +201,8 @@ export const ContactSection = () => {
               <div className="border-t border-gray-200 pt-6">
                 <h4 className="font-medium text-gray-800 mb-4">Télécharger mon CV</h4>
                 <motion.a
-                  href="/cv-ikram-bouhada.pdf" // Assurez-vous de placer votre CV dans le dossier public
-                  download="CV-Ikram-Bouhada.pdf"
+                  href="/Nadir_resume.pdf" // Assurez-vous de placer votre CV dans le dossier public
+                  download="Nadir_Salma_CV.pdf"
                   className="flex items-center gap-2 px-6 py-2.5 bg-portfolio-blue-dark text-white rounded-full shadow-lg hover:shadow-xl transition-all w-fit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

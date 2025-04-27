@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { AnimatedElement } from './AnimatedElement';
 import { motion } from 'framer-motion';
@@ -27,11 +26,11 @@ export const Navbar = () => {
   const menuItems = [
     { name: 'Accueil', anchor: 'home' },
     { name: 'À Propos', anchor: 'about' },
-    { name: 'Formation', anchor: 'education' },
-    { name: 'Compétences', anchor: 'skills' },
+    { name: 'Parcours', anchor: 'education' },
     { name: 'Expérience', anchor: 'experience' },
     { name: 'Projets', anchor: 'projects' },
-    { name: 'Activités', anchor: 'extracurricular' },
+    { name: 'Compétences', anchor: 'skills' },
+    { name: 'Engagements', anchor: 'extracurricular' },
     { name: 'Contact', anchor: 'contact' }
   ];
 
@@ -46,8 +45,9 @@ export const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4">
         <AnimatedElement animation="fadeInLeft" className="flex items-center gap-2">
           <div className="h-9 w-9 rounded-full bg-gradient-to-br from-portfolio-blue-light to-portfolio-blue-dark flex items-center justify-center">
-            <span className="font-bold text-white">IB</span>
+            <span className="font-bold text-white">SN</span>
           </div>
+          <span className="font-semibold text-gray-800">Salma Nadir</span>
         </AnimatedElement>
         
         {/* Menu pour Desktop */}
