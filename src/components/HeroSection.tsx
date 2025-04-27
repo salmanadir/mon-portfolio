@@ -75,7 +75,7 @@ export const HeroSection = () => {
               }}
             >
               <img 
-                src="public/lovable-uploads/picture.png" // Remplacez par votre photo
+                src="/lovable-uploads/picture.png" // Remplacez par votre photo
                 alt="Salma Nadir" 
                 className="w-full h-full object-cover"
               />
