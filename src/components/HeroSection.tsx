@@ -21,7 +21,7 @@ export const HeroSection = () => {
           
           <AnimatedElement animation="fadeInLeft" delay={0.6} className="mb-8">
             <p className="text-gray-600 max-w-lg">
-              À la recherche d'un stage de fin d'année en développement de 2 à 3 mois pour mettre en pratique mes compétences techniques.
+              À la recherche d'un stage de fin d'études en développement/devOps de 4 à 6 mois pour mettre en pratique mes compétences techniques.
             </p>
           </AnimatedElement>
           
