@@ -8,13 +8,16 @@ export const ProjectsSection = () => {
   
   const projects = [
     {
-      title: "Application Mobile de Gestion de Projets Collaboratifs",
-      description: "Conception et développement d'une application mobile Android de gestion de projets : taches, équipe, syst`eme de messagerie en temps réel.",
-      period: "2024",
+      title: "Système de Gestion basé sur une Architecture Microservices ",
+      description: "Objectif: Conception et développement d'un syst`eme de gestion basé sur une architecture Microservices pour une entreprise de transport urbain",
+      period: "En cours",
       location: "ENSIAS, Rabat",
-      technologies: ["Android Studio", "Kotlin", "Firebase", "MVVM", "UML", "UML"],
-      image: "./education/gestion-projets.png" // Placeholder, à remplacer
+      technologies: ["Pas encore fixe à 100%, mais Backend: Spring Boot, frontend: React, Conteneurisation : Docker, Orchestration : Kubernetes, Messaging : RabbitMQ ou Kafka"],
+      image: "./education/loading.png" // Placeholder, à remplacer
     },
+    
+
+
     {
       title: "AstroMap - Plateforme d'Exploration Spatiale",
       description: "Visualisation 3D du syst`eme solaire, quiz éducatifs, mise en place d'un backend en Spring Boot avec base de données PostgreSQL et intégration d'API externes (NOAA) pour la prédiction d'événements astronomiques.",
@@ -22,6 +25,14 @@ export const ProjectsSection = () => {
       location: "ENSIAS, Rabat",
       technologies: ["React.js", "Three.js", "Spring Boot", "PostgreSQL", "Docker", "API NOAA","Git", "UML", "Postman"],
       image: "./education/astromap.png" // Placeholder, à remplacer
+    },
+    {
+      title: "Générateur Automatique de Pipelines de Données",
+      description: "L'idée de notre projet est de créer un outil capable de transformer une description simple d’un pipeline de données (DSL) en code exécutable automatiquement. Un pipeline ETL suit la logique Source → Transformations → Destination, et notre approche utilise le Model-Driven Engineering (MDE) : le pipeline est d’abord défini comme un modèle, puis ce modèle est automatiquement converti en code opérationnel.",
+      period: "En cours",
+      location: "ENSIAS, Rabat",
+      technologies: ["EMF (Eclipse Modeling Framework)", "Xtext", "OCL", "Acceleo"],
+      image: "./education/loading.png" // Placeholder, à remplacer
     },
     {
       title: "Application de Gestion des Stages de l'ENSIAS",
@@ -47,6 +58,14 @@ export const ProjectsSection = () => {
       technologies: ["Flask", "Google Earth Engine", "Python", "JavaScript"],
       image: "./education/atlas-marocain.jpg" // Placeholder, à remplacer
     },
+    {
+      title: "Application Mobile de Gestion de Projets Collaboratifs",
+      description: "Conception et développement d'une application mobile Android de gestion de projets : taches, équipe, syst`eme de messagerie en temps réel.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Android Studio", "Kotlin", "Firebase", "MVVM", "UML", "UML"],
+      image: "./education/gestion-projets.png" // Placeholder, à remplacer
+    }
   ];
 
   return (

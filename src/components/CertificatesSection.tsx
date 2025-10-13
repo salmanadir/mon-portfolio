@@ -27,6 +27,16 @@ export const CertificatesSection = () => {
       type: "Java",
 
     },
+    {
+      title: "Agile Project Management",
+      issuer: "Google",
+      date: "Octobre 2025",
+      location: "Coursera",
+      image: "./certificates/agile.jpg", // Image de prévisualisation
+      file: "./certificates/agile.pdf",
+      type: "IA", // Fichier PDF à télécharger
+ 
+    },
 ]
 
   const handleDownload = (file: string, title: string) => {
