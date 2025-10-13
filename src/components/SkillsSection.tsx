@@ -6,16 +6,16 @@ export const SkillsSection = () => {
       name: "Langues",
       skills: [
         { name: "Arabe (maternelle)", level: 95 },
-        { name: "Français (courant)", level: 95 },
-        { name: "Anglais (courant)", level: 85 },
+        { name: "Français (courant)", level: 90 },
+        { name: "Anglais (courant)", level: 80 },
       ]
     },
     {
       name: "Systèmes d'exploitation",
       skills: [
-        { name: "MacOs", level: 90 },
-        { name: "Windows", level: 85 },
-        { name: "Linux (Ubuntu)", level: 79 },
+        { name: "MacOs", level: 80 },
+        { name: "Windows", level: 80 },
+        { name: "Linux (Ubuntu)", level: 70 },
 
       ]
     },
@@ -41,22 +41,21 @@ export const SkillsSection = () => {
     {
       name: "Langages de programmation",
       skills: [
-        { name: "Java", level: 83 },
-        { name: "Python", level: 70 },
-        { name: "PHP", level: 40 },
-        { name: "JavaScript", level: 75 },
-        { name: "SQL", level: 85 },
-        { name: "C", level: 65 },
-        { name: "HTML5", level: 90 },
-        { name: "CSS3", level: 85 },
-        { name: "Kotlin", level: 40 },
+        { name: "Java", level: 75 },
+        { name: "Python", level: 60 },
+        { name: "PHP", level: 30 },
+        { name: "JavaScript", level: 70 },
+        { name: "SQL", level: 80 },
+        { name: "C", level: 60 },
+        { name: "HTML5", level: 80 },
+        { name: "CSS3", level: 80 },
         { name: "XML", level: 85},
       ]
     },
     {
       name: "Frameworks",
       skills: [
-        { name: "Spring Boot", level: 89 },
+        { name: "Spring Boot", level: 80 },
         { name: "React", level: 65 },
         { name: "Bootstrap", level: 60 },
        
@@ -66,9 +65,9 @@ export const SkillsSection = () => {
       name: "Bases de données",
       skills: [
         { name: "MySQL", level: 80 },
-        { name: "Oracle DB", level: 70 },
-        { name: "PostgreSQL", level: 75 },
-        { name: "Firebase", level: 70 },
+        { name: "Oracle DB", level: 60 },
+        { name: "PostgreSQL", level: 70 },
+        { name: "Firebase", level: 50 },
       ]
     },
     {
