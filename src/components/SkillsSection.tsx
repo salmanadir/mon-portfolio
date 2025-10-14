@@ -25,8 +25,7 @@ export const SkillsSection = () => {
         { name: "Git/GitHub", level: 85 },
         { name: "Docker", level: 65 },
         { name: "GitHub Actions,", level: 65 },
-        { name: "Jenkins", level: 50 },
-        { name: "Grafana", level: 40 },
+        { name: "Jenkins", level: 20 },
 
       ]
     },
@@ -43,7 +42,6 @@ export const SkillsSection = () => {
       skills: [
         { name: "Java", level: 75 },
         { name: "Python", level: 60 },
-        { name: "PHP", level: 30 },
         { name: "JavaScript", level: 70 },
         { name: "SQL", level: 80 },
         { name: "C", level: 60 },
