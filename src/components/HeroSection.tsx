@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';  
   
 export const HeroSection = () => {  
-  const text = "Élève ingénieure en Génie Logiciel à l'ENSIAS";  
+  const text = "Élève ingénieure en Génie Logiciel de l'ENSIAS";  
     
   return (  
     <section id="home" className="min-h-screen pt-24 pb-12 flex items-center relative overflow-hidden bg-gradient-to-b from-white to-blue-50">  
