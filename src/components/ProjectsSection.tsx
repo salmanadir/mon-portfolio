@@ -16,7 +16,14 @@ export const ProjectsSection = () => {
       image: "./education/loading.png" // Placeholder, à remplacer
     },
     
-
+    {
+      title: "Système DevSecOps avec IA Générative pour la Génération Automatique de Politiques de Sécurité",
+      description: "Objectif: Automatisation de la création de politiques de sécurité conformes aux standards NIST/ISO à partir de rapports de vulnérabilités en utilisant des LLMs",
+      period: "En cours",
+      location: "ENSIAS, Rabat",
+      technologies: ["Pas encore fixe à 100%, mais Python, Docker, GitHub Actions, AWS, SonarQube, OWASP Tools"],
+      image: "./education/loading.png" // Placeholder, à remplacer
+    },
 
     {
       title: "AstroMap - Plateforme d'Exploration Spatiale",
@@ -25,6 +32,14 @@ export const ProjectsSection = () => {
       location: "ENSIAS, Rabat",
       technologies: ["React.js", "Three.js", "Spring Boot", "PostgreSQL", "Docker", "API NOAA","Git", "UML", "Postman"],
       image: "./education/astromap.png" // Placeholder, à remplacer
+    },
+    {
+      title: "Automatisation d'un processus d'acquisition d'un bien immobilier,",
+      description: "Objectif: Automatiser et modéliser le processus complet d'acquisition immobilière via un workflow BPMN intelligent, orchestrant les interactions entre clients, agents, vendeurs et notaires, de la recherche initiale jusqu'à la signature de l'acte authentique.",
+      period: "En cours",
+      location: "ENSIAS, Rabat",
+      technologies: ["Pas encore fixe à 100%"],
+      image: "./education/loading.png" // Placeholder, à remplacer
     },
     {
       title: "Générateur Automatique de Pipelines de Données",
@@ -50,14 +65,7 @@ export const ProjectsSection = () => {
       technologies: ["Spring Boot", "Java", "Postman", "MySQL", "HTML5/CSS3", "JavaScript"],
       image: "./education/gestion-formations.png" // Placeholder, à remplacer
     },
-    {
-      title: "Framework Géospatial - Atlas Marocain Interactif",
-      description: "Développement d'une plateforme d'analyse des territoires marocains utilisant Flask et Earth Engine pour des visualisations géospatiales avancées.",
-      period: "2024",
-      location: "ENSIAS, Rabat",
-      technologies: ["Flask", "Google Earth Engine", "Python", "JavaScript"],
-      image: "./education/atlas-marocain.jpg" // Placeholder, à remplacer
-    },
+    
     {
       title: "Application Mobile de Gestion de Projets Collaboratifs",
       description: "Conception et développement d'une application mobile Android de gestion de projets : taches, équipe, syst`eme de messagerie en temps réel.",
@@ -65,6 +73,14 @@ export const ProjectsSection = () => {
       location: "ENSIAS, Rabat",
       technologies: ["Android Studio", "Kotlin", "Firebase", "MVVM", "UML", "UML"],
       image: "./education/gestion-projets.png" // Placeholder, à remplacer
+    },
+    {
+      title: "Framework Géospatial - Atlas Marocain Interactif",
+      description: "Développement d'une plateforme d'analyse des territoires marocains utilisant Flask et Earth Engine pour des visualisations géospatiales avancées.",
+      period: "2024",
+      location: "ENSIAS, Rabat",
+      technologies: ["Flask", "Google Earth Engine", "Python", "JavaScript"],
+      image: "./education/atlas-marocain.jpg" // Placeholder, à remplacer
     }
   ];
 
