@@ -125,7 +125,7 @@ export const ContactSection = () => {
               <div className="border-t border-gray-200 pt-6">
                 <h4 className="font-medium text-gray-800 mb-4">Télécharger mon CV</h4>
                 <motion.a
-                  href="./Nadir_salma_CV-15.pdf" 
+                  href="./Nadir_salma_CV-.pdf" 
                   download="Nadir_Salma_CV.pdf"
                   className="flex items-center gap-2 px-6 py-2.5 bg-portfolio-blue-dark text-white rounded-full shadow-lg hover:shadow-xl transition-all w-fit"
                   whileHover={{ scale: 1.05 }}

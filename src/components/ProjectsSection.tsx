@@ -9,7 +9,7 @@ export const ProjectsSection = () => {
   const projects = [
     {
       title: "Système de Gestion basé sur une Architecture Microservices ",
-      description: "Objectif: Conception et développement d'un syst`eme de gestion basé sur une architecture Microservices pour une entreprise de transport urbain",
+      description: "Objectif: Conception et développement d'un système de gestion basé sur une architecture Microservices pour une entreprise de transport urbain",
       period: "En cours",
       location: "ENSIAS, Rabat",
       technologies: ["Pas encore fixe à 100%, mais Backend: Spring Boot, frontend: React, Conteneurisation : Docker, Orchestration : Kubernetes, Messaging : RabbitMQ ou Kafka"],
@@ -18,17 +18,17 @@ export const ProjectsSection = () => {
     
     {
       title: "Système DevSecOps avec IA Générative pour la Génération Automatique de Politiques de Sécurité",
-      description: "Objectif: Automatisation de la création de politiques de sécurité conformes aux standards NIST/ISO à partir de rapports de vulnérabilités en utilisant des LLMs",
-      period: "En cours",
+      description: "Intégré les scans SAST, SCA et DAST dans un pipeline GitHub Actions pour une application MERN, et développé une solution utilisant les LLMs (LLaMA 3.3/DeepSeek) pour transformer les rapports de vulnérabilités en politiques de sécurité (NIST/ISO) formalisées et simple à comprendre.",
+      period: "1 mois - 2025",
       location: "ENSIAS, Rabat",
-      technologies: ["Pas encore fixe à 100%, mais Python, Docker, GitHub Actions, AWS, SonarQube, OWASP Tools"],
-      image: "./education/loading.png" // Placeholder, à remplacer
+      technologies: ["Github Actions, OWASP Dependency-Check, npm audit, ESLint, OWASP ZAP, LLMs, Python"],
+      image: "./education/devsecops.png" // Placeholder, à remplacer
     },
 
     {
       title: "AstroMap - Plateforme d'Exploration Spatiale",
       description: "Visualisation 3D du syst`eme solaire, quiz éducatifs, mise en place d'un backend en Spring Boot avec base de données PostgreSQL et intégration d'API externes (NOAA) pour la prédiction d'événements astronomiques.",
-      period: "2024",
+      period: "4 mois - 2024",
       location: "ENSIAS, Rabat",
       technologies: ["React.js", "Three.js", "Spring Boot", "PostgreSQL", "Docker", "API NOAA","Git", "UML", "Postman"],
       image: "./education/astromap.png" // Placeholder, à remplacer
@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
     {
       title: "Application de Gestion des Stages de l'ENSIAS",
       description: "Conception avec la méthode Merise pour modéliser le syst`eme et développement de l'application sous Oracle APEX avec interfaces dédiées et gestion des données Oracle.",
-      period: "2024",
+      period: "3 mois - 2024",
       location: "ENSIAS, Rabat",
       technologies: ["Oracle APEX", "PL/SQL", "Oracle DB", "Merise"],
       image: "./education/gestion-stages.jpg" // Placeholder, à remplacer
@@ -60,7 +60,7 @@ export const ProjectsSection = () => {
     {
       title: "Application de Gestion des Formations",
       description: "Développement d'une application web complète avec API REST pour la gestion des formations, incluant une interface responsive et des tests approfondis.",
-      period: "2024",
+      period: "4 mois - 2024",
       location: "ENSIAS, Rabat",
       technologies: ["Spring Boot", "Java", "Postman", "MySQL", "HTML5/CSS3", "JavaScript"],
       image: "./education/gestion-formations.png" // Placeholder, à remplacer
@@ -69,7 +69,7 @@ export const ProjectsSection = () => {
     {
       title: "Application Mobile de Gestion de Projets Collaboratifs",
       description: "Conception et développement d'une application mobile Android de gestion de projets : taches, équipe, syst`eme de messagerie en temps réel.",
-      period: "2024",
+      period: "2 mois - 2024",
       location: "ENSIAS, Rabat",
       technologies: ["Android Studio", "Kotlin", "Firebase", "MVVM", "UML", "UML"],
       image: "./education/gestion-projets.png" // Placeholder, à remplacer
